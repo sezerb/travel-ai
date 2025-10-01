@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+<body>
+    <div class="center-box">
+        <div class="emoji">🌍✈️🏖️</div>
+        <h1>Travel Recommendation</h1>
+        <form th:action="@{/recommend}" method="post">
+            <label for="place">Where do you want to go? <span class="emoji">🗺️</span></label>
+            <input type="text" id="place" name="place" placeholder="e.g. Paris, Tokyo..." required />
+            <br>
+            <button type="submit">Get Recommendations <span style="font-size:1em;vertical-align:middle;">🔎</span></button>
+        </form>
+    </div>
+</body>
+</html>
