@@ -6,8 +6,10 @@ import dev.langchain4j.model.openai.OpenAiChatModel;
 
 @Component
 public class ModelApiClient {
-    private static final String BASE_URL = "http://localhost:12434/engines/v1";
-    private static final String MODEL_NAME = "ai/llama3.2:latest";
+    // Local Granite chat endpoint (exposes OpenAI-compatible /v1/chat/completions)
+    private static final String BASE_URL = "http://localhost:50187";
+    // New model id
+    private static final String MODEL_NAME = "ibm-granite/granite-3.3-8b-instruct-GGUF";
     private final OpenAiChatModel model;
 
     public ModelApiClient() {
