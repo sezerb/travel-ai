@@ -3,8 +3,6 @@ package com.baglans.demo.service;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.baglans.demo.client.ModelApiClient;
-import java.util.Arrays;
-import java.util.List;
 
 @Service
 public class RecommendationService {
